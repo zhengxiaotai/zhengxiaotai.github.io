@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Survive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+    <div class="nav fixed">
+        <a href="index.html">PORTFOLIO</a>
+        <a href="about.html">ABOUT ME</a>
+    </div>
+    <div class="header">
+        <span class="header-title">Survive</span>
+        <a href="http://deco7180teams-impala.uqcloud.net/">Visit Website<span></span></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="left">
+                <h1 class="title">Inspiration</h1>
+                <p class="content">
+                    When starting to live and study in a unfamiliar city, safety is always an 
+                    important issue. As an international student in UQ, this sparked our idea of 
+                    the educational website about teaching students how to deal with emergencies 
+                    and offences and protect themselves.
+                </p>
+                <p class="content">
+                    The original idea of the website is to make it a story-based game, in this way, 
+                    users can learn safety knowledges in a more engaging way. With the offences 
+                    rate dataset to keep students to stay alert. And the location & contact of 
+                    nearby police stations, hospitals, and ambulance stations are extracted from 
+                    datasets respectively and allow users to get familiar with their living 
+                    surroundings. In this stage, I <span class="highlight">searched for relative 
+                    informations and dataset that might be useful</span>, <span class="highlight">
+                    came up with potential ideas of constructing the website</span>, and 
+                    <span class="highlight">discussed how could the game suitable for target 
+                    users</span>.
+                </p>
+            </div>
+            <div class="right" id="bubbles">
+                <div id="bubble1" class="bubble"></div>
+                <div id="bubble2" class="bubble"></div>
+                <div id="bubble3" class="bubble bubble-sm"></div>
+                <div id="bubble4" class="bubble bubble-sm"></div>
+                <div id="bubble5" class="bubble bubble-sm"></div>
+                <div id="bubble6" class="bubble"></div>
+                <div id="bubble7" class="bubble"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="left">
+                <h1 class="title">Design</h1>
+                <p class="content">
+                    In the proposal process, We spent large amount of time designing the game as 
+                    it is the most important feature of the website. As the target users are new 
+                    university students, the game should be interactive, and the content should be 
+                    intuitive and contains sufficient safety knowledge. With this consideration, 
+                    we designed the game as a linear text-based story game with real situation and 
+                    location, and the story is pushed forward by different choices for users in 
+                    each plot. Because we realized that same situation happens in different place 
+                    could have diverse options to handle, such as considering the distance to the 
+                    police station or hospital to decide how to seek help when facing an offence. 
+                    This aspect was designed as a real map for users to view current location and 
+                    nearby services.
+                </p>
+                <!-- interactions -->
+                <p class="content">
+                    We discussed different interactions in the game, such as the whole game and 
+                    choices based on the map, or text-based descriptions, etc. Because interactions 
+                    on the map could be inconspicuous and can be confused, we decides to make plots 
+                    with text descriptions, image illustration, and map supports. Users make 
+                    choices by clicking the text, and different options could have diverse 
+                    consequences and visualizing evaluations according to some authorized articles 
+                    and related laws. 
+                </p>
+                <p class="content">
+                    As a decisive part of the process, I <span class="highlight">looked for various 
+                    game-related or narrative website for inspiration and reference</span>, 
+                    <span class="highlight">designed some main interactions supported by sketches
+                    </span>, and <span class="highlight">proposed some additional features in the 
+                    website</span>. Although not all of them are adopted in the final product, but 
+                    it helped us to make the best option for our design.
+                </p>
+            </div>
+            <div class="right">
+                <img src="./images/plots.png" alt="" id="plot">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="right">
+                <div class="gallery" id="color1"></div>
+                <div class="gallery" id="color2"></div>
+                <div class="gallery" id="color3"></div>
+            </div>
+            <div class="left">
+                <!-- color -->
+                <h1 class="title">Prototyping</h1>
+                <p class="content">
+                    The original <span class="highlight">color theme</span> in our prototype was 
+                    light blue with low contrast. But according to some of the user feedbacks, 
+                    some important features are inconspicuous and sometimes they didn't notice 
+                    them. In this case, we decided to use some bright colors. With an idea of retro 
+                    style and a feeling of old notebook and detective, we tried the color theme of 
+                    orange-yellow-brown. Still, it looks wierd especially with the real map 
+                    embedded, and it doesn't feels serious enough as we named it "Survive". 
+                    Finally, we decide to make it black-white-grey themed, because the topic of 
+                    safety is about life and death, the high contrast of black and white can 
+                    present a sense of solemn and warn users to take it seriously. With key 
+                    elements such as current choices and services link set to light orange, it 
+                    could guide users with the whole process and provide a sense of safety and hope 
+                    just like the meaning of orange.
+                </p>
+                <!-- layout -->
+                <p class="content">
+                    As for the <span class="highlight">layout</span>, it is hard for us to balance 
+                    the scene image and the map in the same page. When users enter the page, the 
+                    first thing they see should be the most important feature, which is the scene 
+                    image because it is intuitive. Then the layout should be easy to follow, that 
+                    is read about the scene and look at the options and the map. With this in mind, 
+                    we adopted a left/right layout with the scene image takes the largest place. 
+                    Descriptions and choices are on the right for users to read through, and the 
+                    map takes place at a corner for users to refer. Although we have considered 
+                    about a up/down layout which could be easier to follow, but it asymmetric 
+                    looking makes it lacks aethetics, so this propose was abandoned.
+                </p>
+                <p class="content">
+                    The <span class="highlight">game map page</span> is the entrance of different 
+                    games, users choose different city and they can see its detailed offences 
+                    data and start the game. Originally it was designed as a real map of QLD with 
+                    icons represent cities as the game entrance. But some user feedback about our 
+                    prototype mentioned that there are too many elements on this page, this might 
+                    lead to information overload. And also the color theme is not compatible as 
+                    customization is not supported for Leaflet.js. In consideration of simplify 
+                    this page and with inspirations from other narrative websites, the map was 
+                    replaced by a concise and abstract one with outline and several main road of 
+                    QLD visible only. In this case, information can be easily recognised and pins 
+                    of the city are more conspicuous.
+                </p>
+                <p class="content">
+                    We made most of our changes of the design in the prototype & testing process. 
+                    As I <span class="highlight">mainly made the website prototype with resources 
+                    created by team members</span>, <span class="highlight">generated several 
+                    potential layout and colors in the prototype for team deciding</span>, and 
+                    <span class="highlight">produced the simplified game entrance map from external 
+                    sources</span>, it reflected the importance of discussing with team members 
+                    because sometimes they can realize something that I can't, and come up with 
+                    better ideas.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="left">
+                <h1 class="title">Implementation</h1>
+                <!-- implementation -->
+                <p class="content">
+                    To build the website, a MySQL database is used for the storage of game plots 
+                    and their sequences. 3 tables were designed for whole story, scene, and choice 
+                    data respectively, and these data was loaded after each choice made in each 
+                    scene according to a specific sequence in it. Additional informations such as 
+                    scene images, choice consequences, different avatars, etc. is also stored in 
+                    extra fields in these table to present a various experience in different game 
+                    story.
+                </p>
+                <p class="content">
+                    Besides, <span class="highlight">dataset</span> were used both within and 
+                    outside the game feature. At the description of the game entrance, data of LGA 
+                    offences rate are presented to users with a compirason to other cities to 
+                    provide a background information and also inform users to be cautious. Services 
+                    location data including police stations, hospital, fire stations, and ambulance 
+                    stations are presented on the in-game map as reference marks. While "Services" 
+                    page is where users can specifically view and search any kind of nearby 
+                    services mentioned above, and the map with locations of these services is the 
+                    main element on this page, and additional text informations such as address and 
+                    telephone are extracted from dataset and present on the list as well to provide 
+                    users with details. For those who don't have phone numbers in dataset, a 
+                    general number of 000 was displayed instead.
+                </p>
+                <p class="content">
+                    For the implementation process, I <span class="highlight">led the construction 
+                    of the website</span>, <span class="highlight">designed and set up the MySQL 
+                    database and connected with the website</span>, <span class="highlight">
+                    implemented most of the challenging functions including interactions, 
+                    animations, data transfering, etc.</span>, and <span class="highlight">finding 
+                    finding external resources such as icons and fonts</span>. As we got some 
+                    feedback from tutors in the last few weeks, I also <span class="highlight">made 
+                    some improvements of some features according to these feedbacks</span> after 
+                    discussed with team members, such as the star-rating and font size issues. 
+                    Although the final product still have some problems and potential improvements 
+                    to be made, generally the current website can meet the need of safety education 
+                    we have proposed at the beginning.
+                </p>
+            </div>
+            <div class="right" id="structures">
+                <img src="./images/structure.png" alt="" id="structure">
+                <span class="structure-text" id="structure-text">
+                    <img src="./images/structure-left.png" alt="" id="structure-left">
+                    <img src="./images/structure-right.png" alt="" id="structure-right">
+                </span>
+            </div>
+        </div>
+        <hr>
+        <div class="row" id="portfolio-img">
+            <!-- portfolio -->
+            <img src="./images/survive-1.png" alt="" class="portfolio-img">
+            <img src="./images/survive-2.png" alt="" class="portfolio-img">
+            <img src="./images/survive-3.png" alt="" class="portfolio-img">
+            <img src="./images/survive-4.png" alt="" class="portfolio-img">
+            <img src="./images/survive-5.png" alt="" class="portfolio-img">
+            <img src="./images/survive-6.png" alt="" class="portfolio-img">
+            <img src="./images/survive-7.png" alt="" class="portfolio-img">
+            <img src="./images/survive-8.png" alt="" class="portfolio-img">
+            <img src="./images/survive-9.png" alt="" class="portfolio-img">
+        </div>
+        <div class="row">
+            <!-- reflections -->
+            <h1 class="title">Reflections</h1>
+            <div class="full">
+                <p class="content">
+                    For the project, we have made a functional website that provides with 
+                    essensial safety knowledge for students. The user test session and feedbacks 
+                    from the teaching team have provided us ideas of what users would care and what 
+                    we need to concern as a designer. Although there are still some problems to be 
+                    solved and some potential improvement could be made according to what we have 
+                    learned from the final tradeshow, in general, we believe that the whole process 
+                    and outcomes are successful, and also recognized that a good functionality is 
+                    important than some cool visual effects. However, regardless some limitations 
+                    of this course and technical issues, the website could have more features. Such 
+                    as adjusting map location according to users' location so university students 
+                    from all over the world can use it. And the game could be more interesting if 
+                    the story is designed as branched instead of linear, so users can have 
+                    completely different storylines made by themselves. Besides, more additional 
+                    information could be used to help users make the right choices, because they 
+                    might still feel unreliable even with some tips after each scene.
+                </p>
+                <p class="content">
+                    For this course, it provides me a good practical opportunity of designing and 
+                    team working. As I have been worked as a developer, I didn't think about the 
+                    design and its rationality. During the work in this studio, I took part in the 
+                    project as a designer as well, and have more aspects to be concern rather than 
+                    just coding. It also helps me a lot as have theoretical knowledge from previous 
+                    courses utilized in this project such as heuristic principles and Fitts' law. 
+                    Besides, it would be better if the course project could be more like a real 
+                    project in industry. Because these projects usually have specific backgrounds 
+                    and limitations, so this might focus more on the depth rathe than the breadth 
+                    of design. Moreover, although all team members are encouraged to take part in 
+                    the design and coding work, but some times the division of work varies, and as 
+                    students from master of IT and master of Interaction Design can form a team 
+                    together, so if an interaction design student did more coding work than IT 
+                    students, this could lead to a mismatch of their major and lack improvement of 
+                    their corresponding skills.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div>Designed & Constructed by Yue Cui, NOV 2021</div>
+    </div>
+    <script src="./scripts/portfolio_survive.js"></script>
+</body>
+</html>
