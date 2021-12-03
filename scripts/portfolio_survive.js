@@ -24,7 +24,7 @@ window.addEventListener('scroll', function() {
     document.getElementById('structure-right').style.marginRight = structure + 'px';
     document.getElementById('structure').style.marginTop = structure + 'px';
 
-    let portfolio = (value - 4600) / 15;
+    let portfolio = (value - 5500) / 30;
     let images = document.getElementsByClassName('portfolio-img');
     for (var i = 0; i < images.length; i++) {
         images[i].style.boxShadow = '#999999 1px ' + portfolio + 'px 18px';
