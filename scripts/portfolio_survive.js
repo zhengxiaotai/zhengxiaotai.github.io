@@ -22,7 +22,7 @@ window.addEventListener('scroll', function() {
     let structure = (value - 3000) / 10;
     document.getElementById('structure-left').style.marginLeft = structure + 'px';
     document.getElementById('structure-right').style.marginRight = structure + 'px';
-    document.getElementById('structure').style.marginTop = (structure + 10) * 3.2 + 'px';
+    document.getElementById('structure').style.marginTop = structure + 'px';
 
     let portfolio = (value - 4600) / 15;
     let images = document.getElementsByClassName('portfolio-img');
