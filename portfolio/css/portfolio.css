@@ -1,0 +1,218 @@
+.header {
+    background: url('../images/banner-survive.png') center no-repeat;
+    background-size: auto 100%;
+    background-color: #052e44;
+    height: 820px;
+}
+.header .header-title {
+    display: inline-block;
+    font-family: RockSalt;
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 170px;
+    margin-left: calc(11vw);
+    text-shadow: #999999 2px 4px 10px;
+}
+.header a {
+    display: block;
+    padding: 10px;
+    margin-top: 180px;
+    margin-left: calc(11vw);
+    width: 230px;
+    border: #FFFFFF 2px solid;
+    font-family: LittlePat;
+    font-size: 36px;
+    text-align: center;
+    line-height: 30px;
+}
+.header a span {
+    background: url('../images/right.png') center no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 4px;
+    left: 5px;
+}
+.header a:hover {
+    text-decoration: underline;
+    text-shadow: #999999 2px 4px 10px;
+}
+
+.left, .right {
+    padding: 20px 2.5%;
+    overflow: hidden;
+}
+/* ======= Responsive elements ======= */
+@media screen and (min-width: 1280px) { 
+    .left {
+        width: 35%;
+        padding: 20px 2.5%;
+    }
+    .right {
+        width: 55%;
+        padding: 20px 2.5%;
+    }
+    .structure-text {
+        top: -372px;
+        height: 375px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .left {
+        width: 60%;
+        padding: 20px 2.5%;
+    }
+    .right {
+        width: 30%;
+        padding: 20px 2.5%;
+    }
+    #plot {
+        position: relative;
+        left: -100px;
+    }
+    .gallery {
+        background-position: calc(4.5vw) center!important;
+    }
+    .structure-text{
+        top: calc(-16.3vw);
+        height: calc(16.5vw);
+    }
+}
+
+
+/* === Bubbles === */
+#bubbles {
+    height: 500px;
+}
+.bubble {
+    position: relative;
+    width: calc(10vw);
+    height: calc(10vw);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bubble-sm {
+    width: calc(7vw);
+    height: calc(7vw);
+}
+#bubble1 {
+    background-image: url('../images/bubble1.png');
+    margin-left: 30%;
+}
+#bubble2 {
+    background-image: url('../images/bubble2.png');
+    margin-left: 0;
+}
+#bubble3 {
+    background-image: url('../images/bubble3.png');
+    margin-left: 18%;
+}
+#bubble4 {
+    background-image: url('../images/bubble4.png');
+    margin-left: 88%;
+}
+#bubble5 {
+    background-image: url('../images/bubble5.png');
+    margin-left: 58%;
+}
+#bubble6 {
+    background-image: url('../images/bubble6.png');
+    margin-left: 69%;
+}
+#bubble7 {
+    background-image: url('../images/bubble7.png');
+    margin-left: 40%;
+}
+
+/* ====== Plot ====== */
+#plot {
+    display: inline-block;
+    margin: 150px 15%;
+    width: 70%;
+}
+
+/* ====== Prototype & Gallery ====== */
+#prototype {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.img-prototype {
+    margin: 30px 0;
+}
+.gallery {
+    position: relative;
+    height: 350px;
+    background-size: 25%;
+    background-position: calc(22vw) center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#color1 {
+    background-image: url('../images/color1.png');
+}
+#color2 {
+    background-image: url('../images/color2.png');
+}
+#color3 {
+    background-image: url('../images/color3.png');
+}
+.blank {
+    height: 50px;
+}
+
+/* ====== Structure ====== */
+#structures {
+    height: calc(30vw);
+}
+#structure {
+    margin-top: 50px;
+    width: 100%;
+}
+.structure-text {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.structure-text img {
+    width: 20%;
+}
+
+/* ====== Portfolio ====== */
+#portfolio-img img {
+    width: 30%;
+    margin: 20px 1.5%;
+    position: relative;
+    box-shadow: #999999 1px 1px 18px;
+    filter: brightness(90%);
+}
+#portfolio-img img:hover {
+    filter: brightness(110%);
+}
+
+.full {
+    width: 90%;
+    padding: 20px 5%;
+}
+
+.row.portfolio {
+    margin-top: 150px;
+}
+.row.portfolio .left .h1 {
+    font-family: LittlePat;
+    font-size: 60px;
+    font-weight: bold;
+}
+.row.portfolio .right {
+    margin-top: 80px;
+    text-align: center;
+}
+.row.portfolio .right img {
+    margin: 20px 0;
+    box-shadow: #999999 2px 2px 15px;
+}

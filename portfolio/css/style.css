@@ -1,0 +1,141 @@
+/* =========== Font family =========== */
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/FuturaLTProMedium.otf');
+}
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../fonts/FuturaLTProLight.otf');
+}
+@font-face {
+    font-family: 'EBGaramond';
+    src: url('../fonts/EBGaramond-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'RockSalt';
+    src: url('../fonts/RockSalt-Regular.ttf');
+}
+@font-face {
+    font-family: 'LittlePat';
+    src: url('../fonts/LittlePat.ttf');
+}
+
+/* ====== General element style ====== */
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+h1, h2, h3 {
+    font-family: Futura;
+}
+h1 {
+    font-size: 40px;
+    border-left: #4c94bb 5px solid;
+    padding-left: 10px;
+    display: inline-block;
+}
+p {
+    line-height: 25px;
+}
+
+/* ============= Nav bar ============= */
+.nav {
+    background-color: #052e44;
+    color: #FFF;
+    font-family: LittlePat;
+    height: 45px;
+    width: 100%;
+    margin-top: -45px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 25px;
+    z-index: 999;
+}
+.nav a {
+    display: inline-block;
+    margin: 10px 50px;
+    font-size: 28px;
+}
+.nav a:hover {
+    cursor: pointer;
+    border-bottom: #FFF 2px solid;
+    text-shadow: #FFF 1px 1px 4px;
+}
+.nav.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+}
+
+.header {
+    width: 100%;
+    height: calc(100vh);
+    background-color: #052e44;
+    color: #FFF;
+    font-family: Futura;
+    z-index: 500;
+}
+.footer {
+    width: 80%;
+    height: 25px;
+    padding: 40px 10%;
+    background-color: #052e44;
+    color: #FFF;
+    font-family: Futura;
+    font-size: 16px;
+    text-align: center;
+    z-index: 500;
+}
+
+
+.container {
+    margin: 10px auto;
+    z-index: 100;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 30px 1%;
+    flex-wrap: wrap;
+}
+.content {
+    font-family: EBGaramond;
+    font-size: 18px;
+    color: #333;
+}
+.desc {
+    font-family: EBGaramond;
+    color: #999;
+}
+.highlight {
+    color: #052e44;
+    font-weight: bold;
+}
+
+/* ======= Responsive elements ======= */
+@media screen and (min-width: 1280px) { 
+    .container {
+        width: 1280px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.font-futura {
+    font-family: Futura;
+}
+.font-littlepat {
+    font-family: LittlePat;
+}
