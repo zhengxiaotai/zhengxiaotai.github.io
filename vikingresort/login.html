@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Viking Resort</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+
+    <body>
+        <div class="nav">
+            <div class="desktop">
+                <div class="nav-item selected"><a href="index.html">Home</a></div>
+                <div class="nav-item">
+                    <a href="#">Things To Do<div class="down"></div></a>
+                    <div id="dropdown">
+                        <ul>
+                            <li><a href="landscape.html">Landscape</a></li>
+                            <li><a href="foods.html">Foods</a></li>
+                            <li><a href="whalewatching.html">Whale Watching</a></li>
+                            <li><a href="bonfireparty.html">Bonfire Party</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-item"><a href="history.html">History</a></div>
+                <div class="nav-item"><a href="reservation.html">Reservation</a></div>
+                <div class="nav-item"><a href="about.html">About</a></div>
+                <div id="user"><a href="login.html"></a></div>
+            </div>
+            <div class="mobile">
+                <div class="main">
+                    <label id="menu" for="check"></label>
+                    <div id="user-mobile"><a href="login.html"></a></div>
+                </div>
+                <input type="checkbox" id="check">
+                <div class="mobile-dropdown">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Activity</a></li>
+                        <li id="activity">
+                            <a href="landscape.html">Landscape</a> /
+                            <a href="foods.html">Foods</a> /
+                            <a href="whalewatching.html">Whale Watching</a> /
+                            <a href="bonfireparty.html">Bonfire Party</a>
+                        </li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="poster">
+            <div class="login-frame">
+                <h1 class="logo">Sign In</h1>
+                <noscript>
+                    <h1>Javascript is not available! Please check your browser!</h1>
+                </noscript>
+                <form>
+                    <div class="row">
+                        <input type="text" id="username" placeholder="Username" tabIndex=1>
+                    </div>
+                    <div class="row">
+                        <input type="password" id="password" placeholder="Password" tabIndex=2>
+                    </div>
+                    <div class="signup">
+                        <span class="description">Sign Up</span>
+                    </div>
+                    <div class="row">
+                        <input type="button" id="signin" class="btn-orange" value="Sign In" tabIndex=3>
+                        <input type="button" id="cancel" class="btn-blue" value="Cancel" tabIndex=4 onclick="window.history.back()">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>

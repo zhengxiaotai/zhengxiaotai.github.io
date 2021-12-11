@@ -1,0 +1,71 @@
+/* ========== Responsive Layout ========== */
+@media screen and (max-width: 700px) {
+    #bookmark {
+        right: .8em!important;
+        font-size: 16px!important;
+    }
+    .content img {
+        width: 100%;
+    }
+    :checked ~ .more {
+        max-height: 700px!important;
+    }
+}
+
+/* ========== Main Content ========== */
+.title {
+    margin-bottom: 1em;
+    padding-top: 2.5em;
+}
+.subtitle {
+    padding-top: 1.5em;
+}
+.content {
+    margin-right: 8em;
+}
+.content img {
+    width: 40%;
+}
+.section-white img {
+    float: right;
+    margin: .2em 0 .2em 1em;
+}
+.section-grey img {
+    float: left;
+    margin: .2em 1em .2em 0;
+}
+
+/* ========== Bookmark Section ========== */
+#bookmark {
+    position: fixed;
+    right: 2em;
+    top: 6em;
+    font-family: "OpenSans-BoldItalic";
+}
+#bookmark a {
+    color: #006296!important;
+}
+
+/* ========== Read More Interaction ========== */
+input {
+    display: none;
+}
+.references {
+    padding-left: .5em 1em;
+    font-family: "OpenSans-LightItalic";
+}
+.more {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-in-out;
+}
+:checked ~ .more {
+    max-height: 450px;
+    overflow: initial;
+}
+.read-more {
+    text-align: right;
+    text-decoration: underline;
+    font-family: "OpenSans-LightItalic";
+    color: #88D3FC;
+}

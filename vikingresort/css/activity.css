@@ -1,0 +1,59 @@
+/* ========== Responsive Layout ========== */
+@media screen and (max-width: 700px) {
+    .poster {
+        background-size: auto 100% !important;
+        background-position: center!important;
+    }
+    .login-frame {
+        width: 80%!important;
+        padding: 5%!important;
+    }
+    .content-small {
+        width: 100%!important;
+        order: 1;
+    }
+    .content-big {
+        width: 100%!important;
+        order: 2;
+    }
+}
+
+/* ========== Main Content ========== */
+.title {
+    margin-bottom: 1em;
+    padding-top: 2.5em;
+}
+.subtitle {
+    padding-top: 1.5em;
+}
+.content {
+    margin-right: 8em;
+}
+.content img {
+    float: right;
+}
+.content-big {
+    width: 55%;
+    float: left;
+    padding: .5em 5%;
+}
+.content-small {
+    width: 32%;
+    float: left;
+    padding: .5em;
+}
+.content-small img {
+    width: 100%;
+    margin-top: 1.2em;
+}
+
+/* ========== Paragraph With Left Border ========== */
+.paragraph {
+    border-left: rgba(91, 164, 203, 0.5) 8px solid;
+    padding: 0 10px;
+    margin: 2em 0;
+}
+.paragraph .paragraph-title {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "OpenSans-BoldItalic";
+}

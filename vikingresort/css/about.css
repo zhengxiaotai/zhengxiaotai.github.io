@@ -1,0 +1,29 @@
+/* ========== Responsive Layout ========== */
+@media screen and (max-width: 700px) {
+    .description span {
+        width: 25%!important;
+    }
+}
+
+/* ========== Main Content ========== */
+.title {
+    margin-bottom: 1em;
+    padding-top: 2.5em;
+}
+.subtitle {
+    padding-top: 1.5em;
+}
+.description span {
+    font-family: "OpenSans-BoldItalic";
+    width: 15%;
+    display: inline-block;
+}
+.description {
+    margin-bottom: 4em;
+}
+#map {
+    width: 100%;
+}
+#references {
+    font-size: 14px;
+}

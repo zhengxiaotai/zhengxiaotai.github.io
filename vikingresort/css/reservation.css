@@ -1,0 +1,113 @@
+/* ========== Responsive Layout ========== */
+@media screen and (max-width: 700px) {
+    fieldset{
+        padding: .25em!important;
+    }
+    fieldset .description {
+        width: 100%!important;
+        margin-bottom: .8em;
+        padding-left: .8em;
+    }
+    .row div {
+        width: 25%!important;
+    }
+    .row hr {
+        width: 10%!important;
+        margin: 2em 0!important;
+    }
+    .btn-orange, .btn-blue {
+        width: 80%!important;
+        font-size: 20px!important;
+        height: 1.6em!important;
+        padding-top: .2em!important;
+    }
+}
+
+/* ========== Special Appearance ========== */
+.nav {
+    background: rgba(0, 98, 150, 0.8);
+}
+#dropdown {
+    background: rgba(0, 98, 150, 0.8);
+}
+.container {
+    padding-top: 6em;
+}
+.title {
+    margin-bottom: 1em;
+}
+.btn-orange, .btn-blue {
+    margin-top: -1.5em;
+    padding-top: .5em;
+    width: 500px;
+    height: 2em;
+    font-size: 30px;
+    font-family: "OpenSans-ExtraBoldItalic";
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* ========== Main Content ========== */
+.row {
+    justify-content: center;
+}
+.row > * {
+    display: inline-block;
+}
+.card {
+    border: rgba(112, 112, 112, 0.5) 1px solid;
+}
+.row div {
+    width: 21%;
+    text-align: center;
+}
+.row div img {
+    width: 100%;
+}
+.row hr {
+    width: 15%;
+    height: 0;
+    margin: 4em 0;
+    border-style: dashed;
+}
+.row span {
+    width: 33%;
+    margin-bottom: 2em;
+}
+
+/* ========== Reservation Login & Success Page ========== */
+fieldset {
+    padding: 2.5em;
+}
+fieldset #room-img {
+    padding-left: 0!important;
+    text-align: center;
+}
+#room-img img {
+    width: 75%;
+}
+div[class=description] {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+.description p {
+    margin: 1.2em 0;
+}
+input, select {
+    width: 50%!important;
+}
+.form-label {
+    display: inline-block;
+    width: 35%;
+    font-family: "OpenSans-BoldItalic";
+}
+#select-room, #pay-deposit, #select-room-btn, #pay-deposit-btn {
+    display: none;
+}
+
+/* ========== User Info Page ========== */
+#userinfo a {
+    color: #5BA4CB;
+    text-decoration: underline;
+}

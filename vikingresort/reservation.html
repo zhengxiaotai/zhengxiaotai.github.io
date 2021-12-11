@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Viking Resort</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reservation.css">
+    </head>
+
+    <body>
+        <div class="nav">
+            <div class="desktop">
+                <div class="nav-item"><a href="index.html">Home</a></div>
+                <div class="nav-item">
+                    <a href="#">Things To Do<div class="down"></div></a>
+                    <div id="dropdown">
+                        <ul>
+                            <li><a href="landscape.html">Landscape</a></li>
+                            <li><a href="foods.html">Foods</a></li>
+                            <li><a href="whalewatching.html">Whale Watching</a></li>
+                            <li><a href="bonfireparty.html">Bonfire Party</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-item"><a href="history.html">History</a></div>
+                <div class="nav-item selected"><a href="reservation.html">Reservation</a></div>
+                <div class="nav-item"><a href="about.html">About</a></div>
+                <div id="user"><a href="login.html"></a></div>
+            </div>
+            <div class="mobile">
+                <div class="main">
+                    <label id="menu" for="check"></label>
+                    <div id="user-mobile"><a href="login.html"></a></div>
+                </div>
+                <input type="checkbox" id="check">
+                <div class="mobile-dropdown">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Activity</a></li>
+                        <li id="activity">
+                            <a href="landscape.html">Landscape</a> /
+                            <a href="foods.html">Foods</a> /
+                            <a href="whalewatching.html">Whale Watching</a> /
+                            <a href="bonfireparty.html">Bonfire Party</a>
+                        </li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="title">Reservation</h1>
+            <fieldset class="card description">
+                <div class="row">
+                    <div>
+                        <img src="images/calendar-lg.png" alt="">
+                        <p>Select Your Date</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <img src="images/Household-lg.png" alt="">
+                        <p>Pick Your Room</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <img src="images/Fees-lg.png" alt="">
+                        <p>Pay the Deposit</p>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="row">
+            <a href="login.html" class="btn-orange">Sign In And Make a Reservation</a>
+        </div>
+
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/reservation.js"></script>
+    </body>
+</html>

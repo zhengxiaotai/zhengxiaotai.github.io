@@ -1,0 +1,37 @@
+/* ========== Responsive Layout ========== */
+@media screen and (max-width: 700px) {
+    body {
+        background-size: auto 100% !important;
+        background-position: center!important;
+    }
+    .text-left {
+        width: 72%!important;
+    }
+}
+
+/* ========== Nav Bar & Background ========== */
+body {
+    background: url(../images/bonfire.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.nav {
+    background: rgba(0, 0, 0, 0.6);
+}
+#dropdown {
+    background: rgba(0, 0, 0, 0.6);
+}
+.nav .mobile .mobile-dropdown {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* ========== Main Content ========== */
+.title {
+    color: #FFFFFF;
+}
+.content {
+    color: #CCCCCC;
+}
+.text-left {
+    width: 75%;
+}
