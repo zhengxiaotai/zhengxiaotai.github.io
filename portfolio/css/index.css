@@ -30,7 +30,10 @@
     box-shadow: #999 1px 1px 6px;
 }
 .project img.mobile {
-    border-radius: 42px;
+    border-radius: 26px;
+}
+.project img.tablet {
+    border-radius: 20px;
 }
 .title {
     margin: 25px 0 0 0;
@@ -39,11 +42,11 @@
     margin-bottom: 25px;
 }
 
-.project .pc {
+.project .pc, .project .tablet {
     width: 100%;
     transition: 0.5s;
 }
-.project .pc:hover {
+.project .pc:hover, .project .tablet:hover {
     width: 102%;
     margin-left: -1%;
     margin-top: -2.1%;
