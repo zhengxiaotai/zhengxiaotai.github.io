@@ -35,6 +35,9 @@
 .project img.tablet {
     border-radius: 20px;
 }
+.project img.other {
+    box-shadow: none;
+}
 .title {
     margin: 25px 0 0 0;
 }
@@ -42,11 +45,11 @@
     margin-bottom: 25px;
 }
 
-.project .pc, .project .tablet {
+.project .pc, .project .tablet, .project .other {
     width: 100%;
     transition: 0.5s;
 }
-.project .pc:hover, .project .tablet:hover {
+.project .pc:hover, .project .tablet:hover, .project .other:hover {
     width: 102%;
     margin-left: -1%;
     margin-top: -2.1%;

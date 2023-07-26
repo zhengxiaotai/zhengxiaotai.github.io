@@ -270,3 +270,23 @@
     background-size: 28%;
     background-position: calc(62vw) center;
 }
+
+
+#aromart1 {
+    background-image: url('../images/aromart-tech1.png');
+    height: 400px;
+    background-size: 40%;
+    background-position: calc(48vw) center;
+}
+#aromart2 {
+    background-image: url('../images/aromart-tech2.jpg');
+    height: 400px;
+    background-size: 40%;
+    background-position: calc(48vw) center;
+}
+#aromart3 {
+    background-image: url('../images/aromart-tech3.png');
+    height: 400px;
+    background-size: 40%;
+    background-position: calc(48vw) center;
+}

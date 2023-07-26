@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SmartQ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <style>
+        #aromart {
+            box-shadow: none;
+        }
+        img {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav fixed">
+        <a href="index.html">PORTFOLIO</a>
+        <a href="about.html">ABOUT ME</a>
+    </div>
+    <div class="banner" style="height: calc(85vh);">
+        <img src="./images/aromart-banner.jpg" alt="" width="100%">
+    </div>
+    <div class="container">
+        <div class="row portfolio">
+            <div class="left">
+                <p class="h1">Aromart</p>
+                <p class="content">
+                    Aromart is an interactive device that allows users to capture smells in the 
+                    environment, combining with visual elements to create a unique souvenir. 
+                    Nowadays people can only capture visual things by photograph and video to 
+                    document emotional value of experience. With Aromart, environmental smells can 
+                    be extracted and persisted, so visitors can have a better understanding and 
+                    unique memory of the place.
+                </p><br>
+                <div class="subtitle">Target User</div>
+                <p class="content">
+                    <span class="content-tag tag-secondary">Tourists</span>
+                </p><br>
+                <div class="subtitle">Role</div>
+                <p class="content">
+                    <span class="content-tag tag-primary">Designer</span>
+                    <span class="content-tag tag-primary">Deveoper</span>
+                </p><br>
+                <div class="subtitle">Contribution</div>
+                <p class="content">
+                    <ul>
+                        <li>Conceptual design</li>
+                        <li>System & functionality design</li>
+                        <li>System construction & implementation</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="right">
+                <!-- <img src="./images/portfolio-aromart.png" alt="" width="85%" id="aromart"> -->
+                <video src="./images/aromart-team-pandora.mp4" controls="controls" poster="./images/aromart-final1.jpg" width="95%"></video>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="left">
+                <img src="./images/aromart-concept1.jpeg" alt="" width="80%" id="aromart">
+                <img src="./images/aromart-concept2.jpeg" alt="" width="80%" id="aromart">
+            </div>
+            <div class="right">
+                <h1>Concept</h1>
+                <p class="content">
+                    Access to unique experiences and sentimental value has become a major focus in 
+                    our lives. People document their live and experience by photograph and videos 
+                    such as when they travel to somewhere. But what if providing them with a 
+                    different dimention? Smell is a sense that have more relation with emotions. 
+                    With the synesthesia of vision and smell, tourists can have a different 
+                    understanding of the specific place, and enhance the memory of the place with 
+                    both image and fragrance. 
+                </p>
+                <p class="content">
+                    For the device, it allows users to collect smells from objects with a "joystick". 
+                    Unique visual effect with colour will appear on the screen when user scan an 
+                    object, indicating that a smell has been collected. Multiple scans are allowed 
+                    to increase the proportion of specific smell and make it stronger, this means 
+                    users can customize their mixture of smell according to their understanding of 
+                    the environment. Once users are satisfied with their collection of smell, they 
+                    can press the "process" button to start analyzing the smells. Meanwhile, users 
+                    can select a postcard of the environment, which could be perfect match to the 
+                    smell they have collected, or could be an image they like most. When the system 
+                    finish analyzing, users can insert the postcard they selected, and press "spray" 
+                    button to generate the smell onto the postcard, which eventually will be the 
+                    unique souvenir they can get.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="left">
+                <h1>Construction</h1>
+                <p class="content">
+                    Aromart device mainly consists of 2 systems: the object capturer and the scent 
+                    generator.
+                </p>
+                <p class="content">
+                    For the object capturer, users can scan objects with a joystick, and the system 
+                    will visualize the object’s scent on the screen. The joystick is achieved with 
+                    a 3D printed frame, which is similar to the HTC VIVE controller, and an 
+                    Adafruit Circuit Playground for colour detecting with its sensor. A Unity 
+                    application running on a PC is developed to visualize the scent users have 
+                    captured through COM communication with the joystick. Each time users scan an 
+                    object, a piece of colour will appear on the PC screen.
+                </p>
+                <p class="content">
+                    The scent generator system starts working when users finish capturing objects, 
+                    and it is an Acrylic box with a Raspberry Pi 4 in it to control the system. 
+                    With Python programming, the Pi controls buttons to trigger the system, a web 
+                    camera to capture the image of the Unity application, and an Epson printer to 
+                    print the image. OpenCV is used in the program to analyze the colour of the 
+                    image, convert RGB to HSV, and sort colours into 7 groups. Meanwhile, a message 
+                    will be sent to the Unity application on the PC through the TCP socket (PC and 
+                    Pi are in the same network) to trigger the processing animation on the screen. 
+                    And also 2 pixel strips are controlled by Pi to indicate different statuses of 
+                    the processing. As users insert the printed image and press the scent button, 
+                    the Pi will control 7 different servos to rotate corresponding times according 
+                    to the colour proportion, and then push spray bottles to generate scents on the 
+                    inserted paper. Servos, buttons, and pixel strips are connected to Pi through 
+                    GPIOs, so it is easier to control them with Python libraries. Considering the 
+                    large number of servos controlled by Pi, and the highest power on GPIO is 5V, 
+                    a power bank is used as an external power source to provide more power.
+                </p>
+                <p class="content">
+                    In consideration of the reusability of the system, programs in both Unity and 
+                    the Pi are all in loops and will be reset after one user finish operation, to 
+                    automatically get ready for the next user.
+                </p>
+            </div>
+            <div class="right">
+                <div class="gallery" id="aromart1"></div>
+                <div class="gallery" id="aromart2"></div>
+                <div class="gallery" id="aromart3"></div>
+            </div>
+        </div>
+        <div class="row">
+            <h1>Exhibition & Testing</h1>
+            <p class="content">
+                Aromart presented successfully during the 2023 UQ Interactive Design Exhibition 
+                and has attracted much attention. The concept is widely accepted by the audience 
+                and the experience has received positive feedback. Aromart is recognized as a 
+                near-future product that is meaningful and interesting, and people expressed 
+                their expectations of its future improvements and utilization. During the 
+                exhibit, Aromart received lots of traffic due to its location advantage and 
+                scenario setting. Most of the visitors show great interest in the project due 
+                to the novel concept and are willing to come up and experience it. With over 80 
+                participants experiencing our product, Most users express a fresh feeling about 
+                the scanner and have scanned multiple items in the scenario to create a compound 
+                odour, while only a few people select only one or two colours to generate 
+                specific smells. Moreover, people find process of the scanning and visualizing 
+                on screen amazing. For the postcard selection, most users have chosen a 
+                scenario-related image, claiming to be a memorial of this novel experience. 
+                While a small proportion of users selected pictures with specific items such as 
+                lemon and lavender to match their choice of smell. After pressing the 
+                “Fragrance” button, almost every user is attracted by the fragrance-spraying 
+                process inside the device and shows great interest and excitement as they 
+                observe through the window. As users get the postcard with their selected image 
+                and smell, almost everyone feels happy and satisfied with their souvenir. Only 
+                one user found out that the smell on the postcard is unexpected because of the 
+                inaccurate analysis of the system.
+            </p>
+            <p class="content">
+                Besides, from the conversation with users, not only have we received much 
+                positive feedback, but also collected some testing data. For example, some 
+                users share their postcards and experience with their friends excitedly, and 
+                some expressed their expectations and suggestions for this project in the 
+                future, which could be helpful for further improvements.
+            </p>
+            <p class="content">
+                Nevertheless, some deficiencies were found in the product during the 
+                installation and exhibit process. Since the process is divided into 3 steps, 
+                which are colour picking, confirming & insert cards, and colour spraying, many 
+                users don't know how to proceed to the next step after colour picking is 
+                completed, and they need guidance to continue. For each stage, there are fewer 
+                hints for users to acknowledge when the state is over and more conspicuous 
+                instructions are needed. Besides, because the screen and the device run 
+                separately, currently the prompt on the screen cannot effectively guide users 
+                to interact with the device. In consequence, connections between the screen 
+                and the device could be enhanced and more interactions could be added. Also, 
+                extreme conditions should be considered, such as a small or huge amount of 
+                colour being scanned by the audience, the visual effect can be either 
+                inconspicuous or too much. So it is important to balance the visual effect 
+                according to the amount of colour and present a clearer view.
+            </p>
+            <p class="content">
+                For the next step, in addition to solving existing issues, Aromart should focus 
+                on refining the process and presenting specific or even customized experiences 
+                for the audience. Scanning of objects can be upgraded with a professional colour 
+                sensor or even object identification with machine learning, which will provide a 
+                more reasonable interaction and will be more aligned with the concept of a 
+                “scent camera”. Moreover, smells can be customized according to scenarios to 
+                present specific smells, and can even combine with emotional values to present 
+                a more meaningful and memorable experience.
+            </p>
+        </div>
+        <div class="row" id="portfolio-img">
+            <!-- portfolio -->
+            <img src="./images/aromart-final1.jpg" alt="" class="portfolio-img">
+            <img src="./images/aromart-final2.jpg" alt="" class="portfolio-img">
+            <img src="./images/aromart-final3.png" alt="" class="portfolio-img">
+            <img src="./images/aromart-final4.png" alt="" class="portfolio-img">
+            <img src="./images/aromart-final5.png" alt="" class="portfolio-img">
+            <img src="./images/aromart-final6.png" alt="" class="portfolio-img">
+        </div>
+    </div>
+    <div class="footer">
+        <span>Designed & Constructed by Yue Cui, NOV 2021</span>
+    </div>
+</body>
+</html>
