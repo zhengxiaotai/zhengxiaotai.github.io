@@ -1,19 +1,44 @@
-.header .header-title {
-    margin-top: calc(35vh);
+.header .header-line1 {
+    margin-top: calc(25vh);
     display: inline-block;
     width: 100%;
-    font-size: 88px;
+    font-family: FuturaLight;
+    font-size: 30px;
+    text-align: center;
+}
+.header .header-line2 {
+    margin-top: calc(2vh);
+    display: inline-block;
+    width: 100%;
+    font-size: 90px;
     font-weight: bold;
     text-align: center;
 }
-.header .header-desc {
-    margin-top: calc(1vh);
+.header .header-line3 {
+    margin-top: calc(5vh);
     display: inline-block;
     width: 100%;
     font-family: FuturaLight;
     font-size: 22px;
     font-style: italic;
     text-align: center;
+}
+.header .header-line4 {
+    margin-top: calc(20vh);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+#highlight1:hover {
+    font-style: normal;
+    font-weight: bold;
+    background-color: #73b6da;
+}
+#highlight2:hover {
+    font-style: normal;
+    font-weight: bold;
+    background-color: #69dda7;
 }
 
 .left, .right {
